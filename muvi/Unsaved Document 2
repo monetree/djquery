@@ -1,0 +1,3 @@
+select u.email,u.display_name as name, count(ms.id), ms.id as video_id from sdk_users u, movie_streams ms where u.id = ms.sdk_user_id and u.studio_id=2848 group by ms.id
+
+select count(ms.id) from movie_streams ms where ms.studio_id=2848 and ms.sdk_user_id >0

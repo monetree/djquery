@@ -1,0 +1,8 @@
+
+  <h1 style="color:red;">records between {{ from }} and {{ to }}: </h1>
+
+<ol>
+  {% for r in records %}
+  <li>{{ r.name }},{{ r.permalink }},{{ r.story }},{{ r.created_date }}</li>
+  {% endfor %}
+</ol>
